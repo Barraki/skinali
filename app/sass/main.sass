@@ -8,7 +8,7 @@
 ::selection
 	background-color: $accent
 	color: #fff
-
+ 
 body
 	font-size: 16px
 	min-width: 320px
@@ -24,6 +24,40 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+
+ul 
+	display: flex
+	flex-direction: row
+	text-decoration: none
+	list-style: none
+	padding: 0
+
+.center 
+	display: flex
+	justify-content: center
+
+
+
+header
+	.nav-links_bg
+		background-color: #005d5d
+		.nav-links
+			margin: 0
+			li 
+				padding: 8px 15px
+				&:hover 
+						border-left: 1px solid #056767
+						border-right: 1px solid #056767
+				a 
+					color: $accent
+					font-family: $default-font
+					font-size: 15px
+					font-weight: 400
+					text-transform: uppercase
+					transition: 0.3s ease
+					justify-content: center
+					&:hover 
+						color: #fff
 
 .img-responsive
 	display: block
