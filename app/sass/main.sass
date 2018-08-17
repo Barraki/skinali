@@ -15,6 +15,7 @@ body
 	position: relative
 	line-height: 1.65
 	font-family: $default-font
+	font-weight: 400
 	overflow-x: hidden
 	color: $text
 	input, textarea
@@ -32,24 +33,68 @@ ul
 	list-style: none
 	padding: 0
 
+p 
+	font-size: 18px
+	line-height: 30px
+	margin-bottom: 20px
+
+main 
+	padding-top: 40px
+	padding-bottom: 60px
+
+.p0
+	padding: 0
+
 .center 
 	display: flex
 	justify-content: center
+
+.between-center
+	height: 100px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.main
+	header
+		.nav-links_bg
+			background-color: #005d5d
+			height: 32px
+			display: flex
+			align-items: center
+			.nav-links
+				margin: 0
+				li 
+					padding: 8px 15px
+					&:hover 
+							border-left: 1px solid #056767
+							border-right: 1px solid #056767
+					a 
+						color: $accent
+						font-family: $default-font
+						font-size: 15px
+						font-weight: 400
+						text-transform: uppercase
+						transition: 0.3s ease
+						justify-content: center
+						&:hover 
+							color: #fff
 
 
 
 header
 	.nav-links_bg
-		background-color: #005d5d
+		background-color: #fff
+		border-bottom: 1px solid #ececec
 		.nav-links
 			margin: 0
 			li 
-				padding: 8px 15px
+				padding: 0px 15px
 				&:hover 
-						border-left: 1px solid #056767
-						border-right: 1px solid #056767
+						border-left: 1px solid #ececec
+						border-right: 1px solid #ececec
 				a 
-					color: $accent
+					color: #02a5a5
 					font-family: $default-font
 					font-size: 15px
 					font-weight: 400
@@ -57,7 +102,104 @@ header
 					transition: 0.3s ease
 					justify-content: center
 					&:hover 
-						color: #fff
+						color: $accent
+	.header_nav 
+		min-height: 100px
+		height: 100%
+		.logo 
+			display: flex
+			justify-content: center
+			align-items: center
+		.right-header_nav
+			.header_search
+				position: relative
+				input
+					width: 280px
+					height: 33px
+					border-radius: 5px
+					border: 1px solid #20bebe
+					background-color: #ffffff
+					padding: 9px 11px
+					color: #005d5d
+					&::placeholder
+						color: #005d5d
+				a
+					background-color: #fff
+					width: 100%
+					.icon 
+						position: absolute
+						top: 6px
+						right: 62px
+						.dash
+							position: absolute
+							top: -1px
+							right: 25px
+							&::after 
+								display: block
+								content: ''
+								width: 1px
+								height: 23px
+								background-color: #d2d2d2
+		.phone
+			color: #202020
+			font-size: 20px
+			font-weight: 400
+		.offer_phone
+			a
+				color: #00bebe
+				font-size: 18px  
+				font-weight: 400
+				text-decoration: none
+				border-bottom: 1px dashed #00bebe
+	
+	.page-links_bg
+		height: 34px
+		background-color: #20bebe
+		display: flex
+		align-items: center
+		.links_header	
+			display: flex
+			align-items: center
+			justify-content: center
+			ul 
+				margin: 0
+				li 
+					padding: 0 21px
+					border-right: 1px solid #2ec9c9
+					height: 34px
+					display: flex
+					align-items: center
+					&:last-of-type
+						border: none
+					a 
+						color: #ffffff
+						font-size: 18px
+						font-weight: 400
+						text-decoration: none
+						
+
+							
+.active_links
+	&::after
+		display: block
+		content: ''
+		height: 2px
+		width: 100%
+		background-color: #20bebe
+		margin-top: 2px
+	a
+		color: #111 !important
+
+.faq 
+	h1 
+		font-size: 40px
+		display: flex
+		justify-content: center
+		margin-bottom: 15px
+
+.title_text 
+	font-size: 25px
+	margin-bottom: 15px
 
 .img-responsive
 	display: block
