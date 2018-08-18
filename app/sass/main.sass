@@ -42,8 +42,14 @@ main
 	padding-top: 40px
 	padding-bottom: 60px
 
+.pt-25 
+	padding-top: 25px
+
 .p0
 	padding: 0
+
+.full_height 
+	min-height: 230px
 
 .center 
 	display: flex
@@ -54,7 +60,9 @@ main
 	display: flex
 	justify-content: space-between
 	align-items: center
-
+.between 
+	display: flex
+	justify-content: space-between
 .main
 	header
 		.nav-links_bg
@@ -177,9 +185,45 @@ header
 						font-weight: 400
 						text-decoration: none
 						
+.nav-bg_footer
+	background-color: #00bebe
+	min-height: 56px
+	.footer-nav_links
+		height: 56px
+		display: flex
+		justify-content: center
+		align-items: center
+		ul 
+			display: flex
+			align-items: center
+			margin: 0
+			li 
+				padding: 0 20px
+				a 
+					text-decoration: none
+					color: #ffffff
+					font-size: 18px
+					transition: all 0.4s ease 
+					&::after
+						display: block
+						content: ''
+						width: 100%
+						height: 2px
+						background-color: #7fdede
+						transform: scale(0)
+					&:hover
+						&::after
+							transform: scale(1)
+							transform: translateY(-5px)
 
+
+
+
+		
 							
 .active_links
+	border-left: 1px solid #ececec
+	border-right: 1px solid #ececec
 	&::after
 		display: block
 		content: ''
@@ -189,6 +233,144 @@ header
 		margin-top: 2px
 	a
 		color: #111 !important
+		text-decoration: none
+		cursor: default
+
+
+.footer-bg_nav 
+	background-color: #005d5d
+	padding-top: 25px
+	padding-bottom: 35px 
+	.title_nav 
+		text-transform: uppercase
+		font-size: 18px
+		color: #fff
+		margin-bottom: 20px
+	ul
+		margin: 0
+		justify-content: flex-start
+		align-items: flex-start
+		display: flex
+		flex-direction: column
+		li 
+			height: 35px
+			a 
+				text-transform: uppercase
+				font-size: 12px
+				color: #fff
+				text-decoration: none
+				padding: 0 3px
+				&::after 
+					display: block
+					content: ''
+					height: 2px
+					width: 100%
+					background-color: #408686
+					transform: scale(0)
+				&:hover 
+					&::after 
+						transform: scale(1)
+						transform: translateY(-5px)
+
+
+.active_title 
+	color: #04a9a9 !important
+.subcribe-bg_footer 
+	padding-bottom: 40px
+	padding-top: 10px
+	min-height: 230px
+	background-color: #04a9a9
+	.logo_footer
+		min-height: 230px
+		display: flex
+		align-items: center
+	.subcribe_form
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		span 
+			font-size: 25px
+			color: #fff
+			margin-bottom: 20px
+		form 
+			input
+				width: 270px
+				height: 47px
+				border-radius: 5px
+				background-color: #ffffff
+				border: none
+				padding: 17px 20px
+				&:last-of-type 
+					margin-left: 10px
+			button 
+				background: none
+				border: none
+				width: 248px
+				height: 50px
+				box-shadow: 3px 3px 0 #1a8d8d
+				background-color: #7adfdf
+				display: block
+				margin: 0 auto
+				margin-top: 30px
+				cursor: pointer
+	.contacts
+		min-height: 230px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		font-size: 20px
+		color: #fff 
+		.phones 
+			a 
+				color: #fff
+				text-decoration: none
+		.email 
+			color: #fff
+			text-decoration: underline
+
+.footer_privacy 
+	background-color: #00bebe
+	padding: 20px 0
+	.privacy 
+		display: flex
+		align-items: center
+		justify-content: center
+		ul 
+			display: flex
+			flex-direction: column
+			justify-content: center
+			margin: 0
+			li 
+				color: #ffffff
+				font-size: 15px
+	.soc_icon 
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		ul 
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+			margin: 0
+			li 
+				display: inline-block
+				vertical-align: middle
+				margin: 0 15px
+				a 
+					svg
+						transition: all 0.3s ease
+						&:hover 
+							fill: #fff !important
+					i 
+						transition: all 0.3s ease
+						font-size: 25px
+						color: #8ff7f7
+						&:hover 
+							color: #fff
+
 
 .faq 
 	h1 
