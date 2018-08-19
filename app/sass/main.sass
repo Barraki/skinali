@@ -37,6 +37,7 @@ p
 	font-size: 18px
 	line-height: 30px
 	margin-bottom: 20px
+	color: #0b3d3c
 
 main 
 	padding-top: 40px
@@ -255,7 +256,18 @@ header
 							transform: translateY(-5px)
 
 
-
+.address
+	ul 
+		display: flex
+		flex-direction: column
+		li 
+			margin-bottom: 20px
+			a
+				font-size: 18px
+				color: #000 
+				transition: 0.3s ease
+				&:hover 
+					color: #029c9c
 
 		
 							
@@ -415,16 +427,88 @@ header
 		align-items: center
 		justify-content: center
 
-.faq 
-	h1 
-		font-size: 40px
+
+.news 
+	main 
+		padding-bottom: 30px
+		.thumbnail
+			img
+				width: 100%
+				height: auto
+		.description_news
+			.title_news 
+				font-size: 25px
+				color: #000
+				line-height: 30px
+				margin-bottom: 15px
+			.preview_news
+				color: #0b3d3c
+				font-size: 18px
+hr 
+	width: 100%
+	border: none
+	height: 1px
+	background-color: #c5c3c3
+	margin: 30px 0 
+.pagination
+	display: flex
+	flex-direction: row
+	justify-content: center
+	.item-page 
+		margin: 0 15px
+		a
+			color: #525252
+			font-size: 20px
+			width: 39px
+			height: 39px
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: 0.3s ease
+			&:hover 
+				background-color: #bcecec
+				border-radius: 880px
+	.active 
+		background-color: #20bebe
+		border-radius: 880px
+
+
+.oplata-dostavka 
+	.office
 		display: flex
-		justify-content: center
-		margin-bottom: 15px
+		flex-direction: column
+		margin-left: 20px
+		li 
+			a 
+				color: #029c9c
+				text-decoration: underline
+				font-size: 18px
+
+.news 
+	a:hover 
+		text-decoration: none
+
+h1, h2
+	font-size: 40px
+	display: flex
+	justify-content: center
+	margin-bottom: 15px
+	font-weight: 400
+	color: #000
+
+.mt-70
+	margin-top: 70px
+
+
+.tehnology 
+	img 
+		margin: 0 auto
 
 .title_text 
 	font-size: 25px
 	margin-bottom: 15px
+	font-weight: 400 
+	color: #000
 
 .img-responsive
 	display: block
