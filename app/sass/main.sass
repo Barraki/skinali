@@ -51,9 +51,43 @@ main
 .full_height 
 	min-height: 230px
 
+
+.header-mobile 
+
+
+.header-mobile_bg
+	background-color: #20bebe
+	height: 62px
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	position: fixed
+	z-index: 999
+	.logo
+		display: block
+		margin: 0 auto
+		img 
+			width: 100%
+			height: auto
+			display: block
+	.menu_nav_button
+		position: absolute
+		left: 2%
+		top: 15%
+		button 
+			background: none 
+			border: none
+			i 
+				font-size: 40px
+				color: #fff
+
 .center 
 	display: flex
 	justify-content: center
+
+.header-mobile
+		display: none
 
 .between-center
 	height: 100px
@@ -118,6 +152,10 @@ header
 			display: flex
 			justify-content: center
 			align-items: center
+			img 
+				width: 100%
+				display: block
+				height: auto
 		.right-header_nav
 			.header_search
 				position: relative
@@ -314,6 +352,7 @@ header
 				margin: 0 auto
 				margin-top: 30px
 				cursor: pointer
+				color: #005d5d
 	.contacts
 		min-height: 230px
 		display: flex
@@ -359,7 +398,7 @@ header
 				display: inline-block
 				vertical-align: middle
 				margin: 0 15px
-				a 
+				a  
 					svg
 						transition: all 0.3s ease
 						&:hover 
@@ -370,7 +409,11 @@ header
 						color: #8ff7f7
 						&:hover 
 							color: #fff
-
+.logo_mobile
+	a
+		display: flex
+		align-items: center
+		justify-content: center
 
 .faq 
 	h1 
