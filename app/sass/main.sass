@@ -133,9 +133,9 @@ header
 			margin: 0
 			li 
 				padding: 0px 15px
-				&:hover 
-						border-left: 1px solid #ececec
-						border-right: 1px solid #ececec
+				border-right: 1px solid #ececec
+				&:last-of-type 
+					border: none
 				a 
 					color: #02a5a5
 					font-family: $default-font
@@ -194,7 +194,7 @@ header
 		.offer_phone
 			a
 				color: #00bebe
-				font-size: 18px  
+				font-size: 17px  
 				font-weight: 400
 				text-decoration: none
 				border-bottom: 1px dashed #00bebe
@@ -272,8 +272,6 @@ header
 		
 							
 .active_links
-	border-left: 1px solid #ececec
-	border-right: 1px solid #ececec
 	&::after
 		display: block
 		content: ''
@@ -331,7 +329,7 @@ header
 	min-height: 230px
 	background-color: #04a9a9
 	.logo_footer
-		min-height: 230px
+		height: 210px
 		display: flex
 		align-items: center
 	.subcribe_form
@@ -365,18 +363,23 @@ header
 				margin-top: 30px
 				cursor: pointer
 				color: #005d5d
+				transition: 0.3s ease
+				&:hover 
+					box-shadow: 0px 0px 0 #1a8d8d
 	.contacts
-		min-height: 230px
+		height: 193px
 		display: flex
 		flex-direction: column
 		align-items: flex-start
-		justify-content: center
+		justify-content: flex-end
 		font-size: 20px
 		color: #fff 
 		.phones 
+			margin-bottom: 30px
 			a 
 				color: #fff
 				text-decoration: none
+				
 		.email 
 			color: #fff
 			text-decoration: underline
