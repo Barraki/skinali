@@ -26,6 +26,25 @@ body
 		&:required:valid
 			border-color: green
 
+a:hover 
+	text-decoration: none
+
+button
+	cursor: pointer
+
+h1, h2
+	font-size: 40px
+	display: flex
+	justify-content: center
+	margin-bottom: 15px
+	font-weight: 400
+	line-height: 50px
+	color: #000
+
+.mt-70
+	margin-top: 70px
+
+
 ul 
 	display: flex
 	flex-direction: row
@@ -491,6 +510,9 @@ hr
 				font-size: 18px
 
 
+.video-section
+	background-color: #f3f3f3
+
 .feedback 
 	main 
 		h1 
@@ -580,23 +602,438 @@ hr
 				// 	border-radius: 2rem
 				// 	position: absolute
 					
+.free-project-order
+	.icon
+		display: flex
+		justify-content: center 
+		align-items: center
+	.title_text
+		display: flex
+		justify-content: center
+		color: #0b3d3c
+	form
+		display: flex
+		flex-direction: column
+		align-items: center
+		input
+			border: none
+			width: 340px
+			height: 57px
+			border-radius: 5px
+			border: 2px solid #c5c3c3
+			color: #898989
+			font-size: 20px
+			padding-left: 20px
+			margin: 0 5px
+		button 
+			margin-top: 20px
+			box-shadow: 3px 3px 0 #abab11
+			background-color: #dbdb23
+	
+	
+.btn
+	display: flex
+	align-items: center
+	justify-content:	center
+	color: #0b3d3c
+	font-size: 17px
+	width: 285px
+	height: 48px
+	transition: 0.2s ease
+	cursor: pointer
+
+.btn_white
+	box-shadow: 3px 3px 0 #b3eaea
+	border: 5px solid #00bebe
+	color: #029c9c
+	font-size: 20px
+	transition: 0.2s ease
+	&:hover 
+		background-color: #00bebe
+		color: #fff
+
+.btn_yellow
+	box-shadow: 3px 3px 0 #abab11
+	background-color: #dbdb23
+	&:hover
+		box-shadow: none
+		color: #0b3d3c
+
+.banner
+	main 
+		padding: 0
+		.short-description
+			background-size: cover
+			padding-top: 40px
+			min-height: 800px
+			border-bottom: 4px solid #00bebe
+			h1
+				color: #0b3d3c
+				font-size: 50px
+				font-weight: 400
+				a
+					color: #20bebe
+					border-bottom: 3px solid #20bebe
+					margin: 0 10px
+			p 
+				color: #0b3d3c
+				font-size: 25px
+				font-weight: 400
+				line-height: 40px
+				text-align: center
+				width: 534px
+				display: block
+				margin: 0 auto
+				margin-bottom: 37px
+			.btn
+				display: block
+				margin: 0 auto
+				width: 355px
+				height: 69px
+				box-shadow: 3px 3px 0 #abab11
+				background-color: #dbdb23
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #0b3d3c
+				font-size: 25px
+				font-weight: 400
+				transition: 0.3s ease
+				&:hover
+					box-shadow: none
+			.container-fluid
+				padding: 0
+				margin-top: 50px
+		.quality
+			h2 
+				margin-bottom: 70px
+			.title_text
+				line-height: 33px
+			p 
+				color: #000000
+				font-size: 18px
+				font-weight: 400
+				line-height: 27px
+			.quality_image 
+				img 
+					width: 100%	
+		.material
+			p 
+				line-height: 20px
+			img 
+				width: 100%
+				height: auto
+			.material-1
+				.col-6 
+					p 
+						line-height: 30px
+						margin: 0
+					span 
+						font-size: 25px
+					hr 
+						margin: 25px 0
+				img 
+					margin-bottom: 22px
+				.col-6:last-of-type
+					padding-left: 0
+			.price_material
+				.parametrs
+					color: #000000
+					font-size: 18px
+					font-weight: 400
+					margin: 0
+				.price_item
+					color: #005d5d
+					font-size: 25px
+		.about_us
+			.row_about_us
+				margin-top: 22px
+				.about_us-item
+					display: flex
+					justify-content: center
+					flex-direction: column
+					align-items: center
+					border-right: 1px solid #e4e4e4
+					img 
+						margin-bottom: 17px
+					p 
+						text-align: center
+		.catalog
+			border: none
+			padding-bottom: 0
+			#tabs
+				.catalog-item.active 
+					.tooltip
+						display: flex
+				.catalog-item
+					background-color: #20bebe
+					opacity: 1
+					transition: 0.3s ease
+					display: flex
+					align-items: center
+					transition: 0.2s ease
+					&:hover
+						background: none
+						img 
+							height: 144px
+					.tooltip
+						position: absolute
+						top: 100%
+						left: 50px
+						width: 580px
+						height: 90px
+						padding-left: 25px
+						border-radius: 0 0 5px 10px
+						background-color: #ffffff
+						z-index: 99
+						display: flex
+						flex-direction: column
+						justify-content: center
+						display: none
+						transition: 0.2s ease
+						h3 
+							color: #0b3d3c
+							font-size: 20px
+							font-weight: 400
+							margin: 0
+						span 
+							color: #0b3d3c
+							font-size: 16px
+						.btn_yellow
+							position: absolute
+							top: 24px
+							right: 29px
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: center
+					li
+						margin: 0 40px 
+						position: relative
+						display: flex
+						flex-direction: column
+						transition: 0.3s ease
+						a
+							position: relative
+							display: flex
+							flex-direction: column
+							justify-content: center
+							align-items: center
+							span 
+								color: #0b3d3c
+								display: flex
+								font-size: 10px
+								justify-content: center
+								flex-direction: column
+								align-items: center
+								transition: all 0.3s ease
+								visibility: hidden
+								
+						&:hover 
+							a
+								color: #04bfbf
+							span 
+								visibility: visible
+						
+						.btn_tab
+							color: #0b3d3c
+							font-size: 20px
+							font-weight: 400
+							padding: 16px 30px
+							border-radius: 28px
+							border: 4px solid #fff
+							text-transform: uppercase
+							transition: 0.3s ease
+					.ui-state-active
+						a
+							border-radius: 28px
+							border: 4px solid #00bebe
+						span 
+							display: none !important
+			.catalog-item
+				padding: 0
+				img 
+					width: 100%
+					height: 180px
+
+
+.FAQs
+	padding: 0
+	border: none
+	.ui-accordion-header-active
+		background-color: #00bebe !important
+		height: 83px !important
+		display: flex
+		align-items: center
+		z-index: 0
+		border-bottom: none !important
+		h3 
+			color: #ffffff !important
+			font-size: 40px !important
+			font-weight: 400 !important
+			margin: 0 !important
+			position: relative
+			z-index: 1
+			&:after 
+				content: ''
+				display: block
+				width: 35px
+				height: 35px
+				background-color: #00bebe
+				position: absolute
+				transform: rotate(45deg)
+				bottom: -40%	
+	.ui-accordion-header
+		height: 57px
+		background-color: #9fdbdb
+		border-bottom: 1px solid #fff
+		h3
+			color: #0b3d3c
+			font-size: 35px
+			font-weight: 400
+	.ui-accordion-content
+		background-color: #d0f4f4
+		padding: 30px 0
+	.ui-state-hover
+		cursor: pointer
+		background-color: #00bebe
+		h3
+			color: #ffffff
+			transition: 0.2s ease
+	
+
+	
+.portfolio-section
+	padding-bottom: 0
+	.row_btn
+		height: 67px
+	.container-works
+		.row
+			display: flex
+			flex-wrap: wrap
+			.work-item
+				background-color: #20bebe
+				&:hover
+					img 
+						opacity: 1
+				img 
+					display: block
+					max-width: 100%
+					height: auto
+					width: 100%
+					opacity: 0.6
+					transition: 0.2s ease
+			
+.type-works
+	padding-top: 0
+	.bg_type-works
+		background-color: #9fdbdb
+		height: 90px
+		display: flex
+		align-items: center
+		h2 
+			margin: 0
+	.type-works-item
+		height: 300px
+		background-color: #a3e8e8
+		z-index: 0
+		&:nth-child(2)
+			background-color: #82d2d2
+		&:nth-child(3)
+			background-color: #96ede0
+		&:nth-child(4)
+			background-color: #73c4c4
+		&:nth-child(5)
+			background-color: #9fdbdb
+		&:nth-child(6)
+			background-color: #87d7c9
+		.step
+			color: #ffffff
+			font-size: 90px
+			font-family: 'Montserrat', sans-serif
+			font-weight: 400
+			z-index: 2
+			line-height: 1
+			padding-top: 50px
+		span
+			color: #0b3d3c
+			font-size: 21px
+			z-index: 2
+		.bg-number
+			color: #b8f3f3
+			font-size: 240px
+			font-weight: 900
+			font-family: 'Montserrat', sans-serif
+			line-height: 1
+			position: absolute
+			z-index: -1
+			bottom: 0
+			right: 20px
+
+
+
+.btn_dashed
+	margin: auto
+	height: auto !important
+
+
+
+section
+	padding-top: 40px
+	padding-bottom: 60px
+	border-bottom: 4px solid #00bebe
+
+.btn_dashed
+	color: #029c9c
+	font-size: 16px
+	border-bottom: 2px dashed #029c9c
+	height: auto
+	width: 240px
+	height: 54px
+
+.p0 
+	padding: 0
+.row_btn
+	height: 54px
+	.col-12
+		display: flex 
+		align-items: center
+
+
+
+.description-block
+	margin: 0 auto
+	text-align: center
+
+.slick-dots li button:before
+	content: ''
+	border-radius: 5rem
+	width: 28px
+	height: 28px
+	border: 3px solid #20bebe
+	background-color: #ffffff
+	opacity: 1
+
+
+.slick-dots li.slick-active button:before
+	background-color: #20bebe
+
+.slick-dots
+	margin-top: 23px
+	bottom: -45px
+.slick-dots li
+	margin: 0 10px
+	
+
+
+.slick-slide img
+	width: 100%
+	
 
 
 .news 
 	a:hover 
 		text-decoration: none
-
-h1, h2
-	font-size: 40px
-	display: flex
-	justify-content: center
-	margin-bottom: 15px
-	font-weight: 400
-	line-height: 50px
-	color: #000
-
-.mt-70
-	margin-top: 70px
 
 
 .tehnology 
