@@ -5,9 +5,7 @@ $(function() {
 		adaptiveHeight: true
 
 	});
-	$( function() {
-    $( "#accordion" ).accordion();
-  } );
+	
 	$( function() {
     $( "#tabs" ).tabs();
   } );
@@ -16,6 +14,13 @@ $(function() {
 		$(this).toggleClass( "active" )
 
 	})
+
+	$( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+ 
+  } );
 
 
 });

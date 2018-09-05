@@ -746,6 +746,8 @@ hr
 					color: #005d5d
 					font-size: 25px
 		.about_us
+			background-color: #ffffff;
+			background-image: linear-gradient(to top, #f3f3f3 0%, rgba(236, 236, 236, 0) 100%);
 			.row_about_us
 				margin-top: 22px
 				.about_us-item
@@ -758,6 +760,10 @@ hr
 						margin-bottom: 17px
 					p 
 						text-align: center
+					&:nth-child(4)
+						border: none
+					&:nth-child(9n)
+						border: none
 		.catalog
 			border: none
 			padding-bottom: 0
@@ -839,14 +845,14 @@ hr
 							color: #0b3d3c
 							font-size: 20px
 							font-weight: 400
-							padding: 16px 30px
+							padding: 10px 30px
 							border-radius: 28px
 							border: 4px solid #fff
 							text-transform: uppercase
 							transition: 0.3s ease
 					.ui-state-active
 						a
-							border-radius: 28px
+							border-radius: 3.5rem
 							border: 4px solid #00bebe
 						span 
 							display: none !important
@@ -855,7 +861,9 @@ hr
 				img 
 					width: 100%
 					height: 180px
+					
 
+  
 
 .FAQs
 	padding: 0
@@ -894,6 +902,26 @@ hr
 	.ui-accordion-content
 		background-color: #d0f4f4
 		padding: 30px 0
+		padding-bottom: 0
+		span 
+			line-height: 1.2
+		.container
+			max-height: 500px
+			overflow-y: auto
+			padding-right: 40px
+			&::-webkit-scrollbar
+				width: 11px
+			&::-webkit-scrollbar-track
+				max-width: 1px !important
+				background-color: #fff
+			&::-webkit-scrollbar-track-piece
+				max-width: 1px !important
+				background-color: #fff
+			&::-webkit-scrollbar-thumb
+				width: 11px
+				height: 60px
+				border-radius: 6px
+				background-color: #00bebe
 	.ui-state-hover
 		cursor: pointer
 		background-color: #00bebe
