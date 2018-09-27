@@ -2,7 +2,8 @@ $(function() {
   $(".slider-main").slick({
     dots: true,
 		adaptiveHeight: true,
-		arrows: false
+		arrows: false,
+		fade: true,
   });
 
   $(function() {
