@@ -62,6 +62,8 @@ main
 	padding-top: 40px
 	padding-bottom: 60px
 
+.main 
+	padding: 0 
 .pt-25 
 	padding-top: 25px
 
@@ -71,9 +73,42 @@ main
 .full_height 
 	min-height: 230px
 
+#ideas .description_news .title_news, main.news .description_news .title_news 
+	margin-bottom: 2px !important
 
-.header-mobile 
 
+.header-main
+	.nav-links_bg
+		background-color: #005d5d
+		border: none !important
+		.nav-links 
+			li
+				border-right: 1px solid #056767
+				a 
+					color: #00bebe
+			li.active_links 
+				a
+					color: #00bebe
+			
+.header-main
+	.active_links 
+		a
+			color: #00bebe !important
+		&:after
+			display: none
+
+.header-main .header_nav .logo img
+	width: auto
+
+.header-main .header_nav .phone 
+	color: #ffffff
+
+.header-main .header_nav .offer_phone a 
+	color: #c3ecec
+	border-bottom: 1px dashed #c3ecec
+
+.header_nav_bg 
+	background-color: #00bebe
 
 .header-mobile_bg
 	background-color: #20bebe
@@ -195,7 +230,7 @@ header
 					.icon 
 						position: absolute
 						top: 6px
-						right: 64px
+						right: 54px
 						.dash
 							position: absolute
 							top: -1px
@@ -454,7 +489,7 @@ header
 
 
 
-main.news  
+main.news, #ideas 
 	padding-bottom: 30px
 	.thumbnail
 		img
@@ -746,16 +781,16 @@ main.banner
 				color: #005d5d
 				font-size: 25px
 	.about_us
-		background-color: #ffffff;
-		background-image: linear-gradient(to top, #f3f3f3 0%, rgba(236, 236, 236, 0) 100%);
+		background-color: #ffffff
+		background-image: linear-gradient(to top, #f3f3f3 0%, rgba(236, 236, 236, 0) 100%)
 		.row_about_us
 			margin-top: 22px
 			.about_us-item
 				display: flex
-				justify-content: center
 				flex-direction: column
 				align-items: center
 				border-right: 1px solid #e4e4e4
+				padding-top: 28px
 				img 
 					margin-bottom: 17px
 				p 
@@ -866,7 +901,7 @@ main.banner
 			img 
 				width: 100%
 				height: 180px
-		
+
 .title-block
 	border: none
 
@@ -1152,7 +1187,163 @@ section
 
 b, strong
 	font-weight: bold
+.main .title_text
+	font-size: 20px
+	line-height: 1.2
+	color: #0b3d3c
+
+//------------ sections ----------------
+
+.btn_white 
+	width: 355px
+	height: 69px
+
+#about_us 
+	.row	
+		justify-content: center
+		h1 
+			margin: 0 auto
+			margin-bottom: 18px
+		.title_text
+			color: #0b3d3c
+			font-size: 22px
+			margin: 0
+			text-align: center
+		p 
+			color: #0b3d3c
+			font-size: 18px
+			font-weight: 400
+			line-height: 30px
+			text-align: center
+		.signature
+			display: flex
+			justify-content: center
 
 
+#kitchen-draw
+	background-color: #f3f3f3
+	background-image: url("../img/bg-kitchen.png")
+	background-repeat: no-repeat
+	background-size: 45%
+	background-position: 0% center
+	.row
+		justify-content: flex-end
+		h2
+			margin-bottom: 30px
+
+#window-draw
+	background-image: url("../img/window.png")
+	background-repeat: no-repeat
+	background-position: 100% 100%
+	background-size: 43%
+	h2 
+		margin-bottom: 30px
+	.btn
+		margin: 0 auto
+
+#bathroom-draw
+	background-color: #f3f3f3
+	background-image: url("../img/bathroom.png")
+	background-repeat: no-repeat
+	background-size: 45%
+	background-position: 0% center
+	h2 
+		margin-bottom: 30px
+	.row
+		justify-content: flex-end
+	.btn
+		margin: 0 auto
+
+#kitchen-mdf
+	background-color: #f3f3f3
+	background-image: url("../img/mdf.png")
+	background-repeat: no-repeat
+	background-position: 100% 70%
+	background-size: 40%
+	h2 
+		margin-bottom: 30px
+#seo
+	background-color: #00bebe
+	background-image: url("../img/seo.png")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	color: #fff
+	display: flex
+	align-items: center
+	h2 	
+		color: #ffffff
+		font-size: 40px
+		margin-bottom: 30px
+	.title_text
+		font-size: 25px
+		margin-bottom: 0
+		color: #fff
+		margin-bottom: 5px
+	p 
+		color: #fff
+		opacity: 0.7
+		margin-bottom: 50px
+	.btn_row
+		justify-content: flex-end !important
+		.btn 
+			margin: 0
+			color: #ffffff
+			border-bottom: 1px solid #ffffff
+			display: block
+			width: auto
+			opacity: 0.8
+			line-height: 1
+
+
+.rectangle
+	background-color: #20bebe
+	width: 370px
+	height: 278px
+
+
+.idea-item
+	transition: 0.2s ease
+	.rectangle 
+		img 
+			transition: 0.2s ease
+	.title_news
+		transition: 0.2s ease
+
+
+.idea-item:hover
+	.rectangle 
+		img 
+			opacity: 0.6
+	.title_news
+		text-decoration: underline
+
+	
+
+.btn_row
+	display: flex
+	justify-content: center
+.description_block
+	p 
+		margin-bottom: 40px
+		a 
+			text-decoration: underline
+			color: #029c9c
+	ul 
+		display: flex
+		flex-direction: column
+		li 
+			display: flex
+			flex-direction: row
+			align-items: center
+			margin-bottom: 20px
+			span 
+				margin-left: 35px
+			img 
+				width: 35px
+	.title_text
+		margin-bottom: 25px
+
+//------------ sections end ------------
 
 @import "media" // Always at the end
