@@ -5,8 +5,6 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-	header .header_nav .right-header_nav .header_search a .icon
-		right: 82px
 	.nav-bg_footer .footer-nav_links ul li
 		padding: 0 14px
 	.subcribe-bg_footer .subcribe_form form input
@@ -16,7 +14,14 @@
 	.footer-bg_nav .title_nav
 		font-size: 16px
 	header .header_nav .right-header_nav .header_search a .icon
-		right: 24px
+		right: 73px
+
+	.rectangle
+		height: auto
+		width: auto
+	#ideas .description_news .preview_news, main.news .description_news .preview_news
+		height: 150px
+		overflow: hidden
 
 	main.banner .short-description h1
 		font-size: 45px
@@ -64,6 +69,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	.main .thumbnail
+		margin-bottom: 15px
+	header .header_nav .right-header_nav .header_search a .icon
+		right: 13px
+	#kitchen-draw, #window-draw, #bathroom-draw, #kitchen-mdf
+		background-image: none
+	.image-mobile 
+		display: block
+		width: 100%
+		height: auto
+		margin: 15px 0
 	.footer-bg_nav
 		display: none 
 	.header_phone 
@@ -195,7 +211,13 @@
 	
 
 // ≥768px
-+media-breakpoint-down(sm) 
++media-breakpoint-down(sm)
+	.main .btn_white
+		width: 300px
+	.idea-item
+		margin: 0
+	.header-main
+		height: 62px
 	.header-desktop 
 		display: none
 	.header-mobile
