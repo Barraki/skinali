@@ -637,6 +637,10 @@ main.news-single
 			// 	border-radius: 2rem
 			// 	position: absolute
 				
+
+.block-item 
+	svg 
+		width: 36px
 .free-project-order
 	.icon
 		display: flex
@@ -791,10 +795,18 @@ main.banner
 				align-items: center
 				border-right: 1px solid #e4e4e4
 				padding-top: 28px
-				img 
+				cursor: pointer
+				svg
 					margin-bottom: 17px
+					fill: #c5c3c3
+					width: 65px
+					transition: 0.2s ease
+				&:hover
+					svg
+						fill: #00bebe
 				p 
 					text-align: center
+					line-height: 24px
 				&:nth-child(4)
 					border: none
 				&:nth-child(9n)
