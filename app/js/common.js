@@ -1,4 +1,12 @@
 $(function() {
+	$( function() {
+		$( "#draggable1" ).draggable({ cursor: "pointer, scroll: true"});
+		$( "#draggable2" ).draggable({ cursor: "pointer, scroll: true"});
+		$( "#draggable3" ).draggable({ cursor: "pointe, scroll: truer"});
+		$( "#draggable4" ).draggable({ cursor: "pointe, scroll: truer"});
+		$( "#draggable5" ).draggable({ cursor: "pointe, scroll: truer"});
+		$( "#draggable6" ).draggable({ cursor: "pointe, scroll: truer"});
+	} );
   $(".slider-main").slick({
     dots: true,
 		adaptiveHeight: true,

@@ -207,10 +207,9 @@ header
 			display: flex
 			justify-content: center
 			align-items: center
+			padding: 0
 			img 
 				width: 100%
-				display: block
-				height: auto
 		.right-header_nav
 			.header_search
 				position: relative
@@ -486,6 +485,13 @@ header
 		display: flex
 		align-items: center
 		justify-content: center
+		width: 179px
+		height: 53px
+		svg 
+			fill: #fff
+			width: 179px
+			.st1 
+				fill: #fff
 
 
 
@@ -639,8 +645,22 @@ main.news-single
 				
 
 .block-item 
-	svg 
+	display: flex
+	flex-direction: column
+	img 
 		width: 36px
+		margin-right: 5px
+	.answer
+		padding-left: 20px
+		display: flex
+	&__title
+		display: flex
+		align-items: center
+	.btn
+		margin: 0 auto
+		margin-top: auto
+		width: 268px
+		height: 59px
 .free-project-order
 	.icon
 		display: flex
@@ -706,6 +726,7 @@ main.banner
 		padding-top: 40px
 		min-height: 800px
 		border-bottom: 4px solid #00bebe
+		position: relative
 		h1
 			color: #0b3d3c
 			font-size: 50px
@@ -828,16 +849,19 @@ main.banner
 				align-items: center
 				transition: 0.2s ease
 				cursor: pointer
-				img 
-					transition: 0.2s ease
+				a
+					width: 100%
+					img 
+						transition: 0.2s ease
 				&:hover
 					background: none
 					img 
 						height: 144px
 				.tooltip
+					width: 580px
 					position: absolute
 					top: 100%
-					left: 90px
+					left: 50%
 					height: 0
 					padding-left: 25px
 					padding-right: 15px
@@ -846,20 +870,21 @@ main.banner
 					z-index: 99
 					display: flex
 					flex-direction: row
-					justify-content: space-between
 					align-items: center
 					transition: 0.2s ease
 					opacity: 0
-					h3 
+					justify-content: space-between
+					transform: translateX(-50%)
+					h3  
 						color: #0b3d3c
 						font-size: 20px
 						font-weight: 400
 						margin: 0
-						width: 255px
 					span 
 						color: #0b3d3c
 						font-size: 16px
 					.btn_yellow
+						width: 285px
 			ul
 				display: flex
 				flex-direction: row
@@ -1052,6 +1077,7 @@ main.banner
 			
 .type-works
 	padding-top: 0
+	padding-bottom: 0 
 	.bg_type-works
 		background-color: #9fdbdb
 		height: 90px
@@ -1142,8 +1168,34 @@ section
 		position: absolute
 		bottom: 0
 		left: 0
-		height: 135px
+		height: 100% 
 		width: 100%
+	.draggable-container
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: row
+		div 
+			position: absolute
+		#draggable1
+			position: absolute
+			top: 190px
+			left: 580px
+		#draggable2
+			position: absolute
+			top: 8px
+			left: 768px
+		#draggable3
+			position: absolute
+			left: 968px
+			top: -61px
+		#draggable4
+			left: 1186px
+			top: 170px
+
 
 .slick-dots li button:before
 	content: ''
