@@ -718,100 +718,123 @@ main.news-single
 		box-shadow: none
 		color: #0b3d3c
 
+
+
+#mobile-menu.slide 
+	height: auto
+	opacity: 1
+	display: block
+	.bg-menu
+		opacity: 1
+	.wrapper-menu
+		height: auto
+
+	
 #mobile-menu
 	height: 0
 	opacity: 0
-	transition: 0.3s ease
+	display: none
+
+
+body.no-scroll
+	height: 100%
+	overflow: hidden
+
 .header-mobile
 	.bg-menu
 		width: 100%
 		height: 100%
-		position: absolute
-		top: 62px
+		position: fixed
+		top: 0
 		left: 0
-		background-color: #000
-		opacity: 0.5
+		background-color: rgba(0, 0, 0, 0.5)
 		z-index: 488
-	.wrapper-menu
-		transition: 0.3s ease
+		transition: all 0.3s ease
+	#mobile-menu
 		position: fixed
 		width: 100%
 		top: 62px
-		z-index: 500
-		background-color: #17abab
-		color: #fff
-		font-size: 25px
-		font-weight: 300 
-		text-transform: uppercase
-		border-top: 1px solid #fff
-		padding-bottom: 32px
-		display: flex
-		flex-direction: column
-		align-items: center
-		letter-spacing: 1px
-		height: 0
-		opacity: 0
-		ul 
+		z-index: 400
+		overflow: scroll
+		height: 100%
+		.wrapper-menu
+			transition: 0.3s ease
+			position: relative
+			z-index: 500
+			background-color: #17abab
+			color: #fff
+			font-size: 25px
+			font-weight: 300 
+			text-transform: uppercase
+			border-top: 1px solid #fff
+			padding-bottom: 32px
 			display: flex
 			flex-direction: column
-			width: 100%
-			li 
-				padding-left: 21px
-				height: 80px
+			align-items: center
+			letter-spacing: 1px
+			margin-bottom: 100px
+			transition: all 0.8s ease
+			ul 
 				display: flex
-				align-items: center
-				background-color: #20bebe
-				border-bottom: 1px solid #17abab
-		.callback
-			.phone
-				font-size: 25px
-				color: #fff
-			.order-phone
-				text-transform: none !important
-				line-height: 1
-				display: flex
-				justify-content: center
+				flex-direction: column
 				width: 100%
-				margin-top: 33px
-				margin-bottom: 40px
-				text-decoration: none
-				border-bottom: 3px dashed #fff
-		.search
-			width: 100%
-			form 
-				width: 100%
-				padding: 0 20px
-				position: relative
-				input 
-					width: 100%
-					height: 57px
-					border-radius: 5px
-					border: 2px solid #c5c3c3
-					background-color: #ffffff
-					color: #005d5d
+				li 
+					padding-left: 21px
+					height: 80px
+					display: flex
+					align-items: center
+					background-color: #20bebe
+					border-bottom: 1px solid #17abab
+			.callback
+				.phone
 					font-size: 25px
-					padding-left: 20px
-					&::placeholder 
+					color: #fff
+				.order-phone
+					text-transform: none !important
+					line-height: 1
+					display: flex
+					justify-content: center
+					width: 100%
+					margin-top: 33px
+					margin-bottom: 40px
+					text-decoration: none
+					border-bottom: 3px dashed #fff
+			.search
+				width: 100%
+				form 
+					width: 100%
+					padding: 0 20px
+					position: relative
+					input 
+						width: 100%
+						height: 57px
+						border-radius: 5px
+						border: 2px solid #c5c3c3
+						background-color: #ffffff
 						color: #005d5d
-				a	
-					.icon 
-						position: absolute
-						top: 8px
-						right: 32px
-						.dash
+						font-size: 25px
+						padding-left: 20px
+						&::placeholder 
+							color: #005d5d
+					a	
+						.icon 
 							position: absolute
-							top: -1px
-							right: 25px
-							margin-right: 15px
-							&::after 
-								display: block
-								content: ''
-								width: 1px
-								height: 41px
-								background-color: #d2d2d2
-								svg 
-									width: 32px
-									height: 31px
+							top: 8px
+							right: 32px
+							.dash
+								position: absolute
+								top: -1px
+								right: 25px
+								margin-right: 15px
+								&::after 
+									display: block
+									content: ''
+									width: 1px
+									height: 41px
+									background-color: #d2d2d2
+									svg 
+										width: 32px
+										height: 31px
 
 
 
