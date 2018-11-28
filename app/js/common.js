@@ -1,41 +1,51 @@
-$(function() {
-	$( function() {
-		$( "#draggable1" ).draggable({ cursor: "pointer, scroll: true"});
-		$( "#draggable2" ).draggable({ cursor: "pointer, scroll: true"});
-		$( "#draggable3" ).draggable({ cursor: "pointe, scroll: truer"});
-		$( "#draggable4" ).draggable({ cursor: "pointe, scroll: truer"});
-		$( "#draggable5" ).draggable({ cursor: "pointe, scroll: truer"});
-		$( "#draggable6" ).draggable({ cursor: "pointe, scroll: truer"});
-	} );
-  $(".slider-main").slick({
-    dots: true,
+$(function () {
+	$(function () {
+		$("#draggable1").draggable({
+			cursor: "pointer, scroll: true"
+		});
+		$("#draggable2").draggable({
+			cursor: "pointer, scroll: true"
+		});
+		$("#draggable3").draggable({
+			cursor: "pointe, scroll: truer"
+		});
+		$("#draggable4").draggable({
+			cursor: "pointe, scroll: truer"
+		});
+		$("#draggable5").draggable({
+			cursor: "pointe, scroll: truer"
+		});
+		$("#draggable6").draggable({
+			cursor: "pointe, scroll: truer"
+		});
+	});
+	$(".slider-main").slick({
+		dots: true,
 		adaptiveHeight: true,
 		arrows: false,
-		responsive:[
-			{
+		responsive: [{
 			breakpoint: 1200,
 			settings: {
 				centerMode: true,
 				slidesToShow: 1,
 				variableWidth: true
 			}
-			}
-		]
-  });
+		}]
+	});
 
-  $(function() {
-    $("#tabs").tabs();
-  });
+	$(function () {
+		$("#tabs").tabs();
+	});
 
-  $(".catalog-item").hover(function() {
-    $(this).toggleClass("active");
-  });
+	$(".catalog-item").hover(function () {
+		$(this).toggleClass("active");
+	});
 
-  $(function() {
-    $("#accordion").accordion({
-      heightStyle: "content"
-    });
-  });
+	$(function () {
+		$("#accordion").accordion({
+			heightStyle: "content"
+		});
+	});
 
 	$(".tab-1").click(function () {
 		$(".tab-2").removeClass("active");
@@ -50,7 +60,7 @@ $(function() {
 		$(".tabs-1").removeClass("active");
 		$(".tabs-2").addClass("active");
 
-	});	
+	});
 
 	$(".menu_nav_button").click(function () {
 
@@ -60,17 +70,29 @@ $(function() {
 
 	})
 
-	$(".bg-menu").click(function() {
+	$(".bg-menu").click(function () {
 		$("#mobile-menu").removeClass("slide")
 		$("body").removeClass("no-scroll")
 	})
 
 
 
-	$(function() {
-    $("#menu").accordion({
-     
-    });
-  });
-	
+	$(function () {
+		$("#menu").accordion({
+
+		});
+	});
+
+
+
 });
+
+
+$("#containment-wrapper div").on("click", function () {
+	$(".tooltip-flip").fadeOut()
+});
+
+
+
+
+
