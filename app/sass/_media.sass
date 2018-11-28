@@ -2,6 +2,12 @@
 
 
 /*==========  Desktop First  ==========*/
+@media only screen and (min-width : 1920px)
+	.slider-content .draggable-container
+		display: none
+	.slider-content .bg-slider
+		background-image: url("../img/1920.png")
+		height: 105%
 
 
 @media only screen and (max-width : 1920px)
@@ -158,6 +164,11 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.slider-content .bg-slider
+		background-image: url("../img/1920.png")
+		height: 105%;
+
+
 	header .page-links_bg .links_header ul li a
 		font-size: 15px
 	#containment-wrapper
@@ -248,7 +259,7 @@
 	header .page-links_bg .links_header ul li a
 		font-size: 14px
 	header .page-links_bg .links_header ul li
-		padding: 0 17px
+		padding: 0 7px
 	.subcribe-bg_footer .logo_footer
 		min-height: 70px
 		justify-content: center
@@ -280,7 +291,7 @@
 		font-size: 36px
 
 	main.banner .short-description
-		padding-bottom: 0
+		padding-bottom: 50px
 
 	h1, h2
 		text-align: center
@@ -492,8 +503,8 @@
 		display: flex
 		align-items: center
 
-	.slick-slide img 
-		height: auto
+
+	
 
 	main.banner .short-description p
 		font-size: 14px
@@ -515,7 +526,8 @@
 		padding-bottom: 0
 
 	main.banner .short-description
-		min-height: 463px
+		min-height: auto
+		padding-bottom: 40px;
 
 	main.banner .quality .quality_image img
 		width: 50%
@@ -531,6 +543,11 @@
 			margin: 0 5px
 			color: #20bebe
 			border-bottom: 2px solid #20bebe
+
+	.slider-content .bg-slider 
+		background-image: url(../img/1920.png)
+		height: 80%
+
 
 /*==========  Mobile First  ==========*/
 

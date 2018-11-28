@@ -727,7 +727,9 @@ main.news-single
 	.bg-menu
 		opacity: 1
 	.wrapper-menu
-		height: auto
+		height: auto !important
+		overflow: visible !important
+
 
 	
 #mobile-menu
@@ -757,8 +759,9 @@ body.no-scroll
 		z-index: 400
 		overflow: scroll
 		height: 100%
+
 		.wrapper-menu
-			transition: 0.3s ease
+			transition: all 0.3s ease			
 			position: relative
 			z-index: 500
 			background-color: #17abab
@@ -774,7 +777,11 @@ body.no-scroll
 			letter-spacing: 1px
 			margin-bottom: 100px
 			transition: all 0.8s ease
-			ul 
+			height: 0
+			overflow: hidden
+			padding: 0
+			
+			ul
 				display: flex
 				flex-direction: column
 				width: 100%

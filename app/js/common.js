@@ -11,7 +11,16 @@ $(function() {
     dots: true,
 		adaptiveHeight: true,
 		arrows: false,
-		fade: true,
+		responsive:[
+			{
+			breakpoint: 1200,
+			settings: {
+				centerMode: true,
+				slidesToShow: 1,
+				variableWidth: true
+			}
+			}
+		]
   });
 
   $(function() {
@@ -45,6 +54,7 @@ $(function() {
 
 	$(".menu_nav_button").click(function () {
 
+		$(".active.menu i").toggleClass("fa-times")
 		$("#mobile-menu").toggleClass("slide")
 		$("body").toggleClass("no-scroll")
 
