@@ -8,6 +8,8 @@
 	.slider-content .bg-slider
 		background-image: url("../img/1920.png")
 		height: 105%
+	.tooltip-flip
+		display: none
 
 
 @media only screen and (max-width : 1920px)
@@ -164,6 +166,8 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.tooltip-flip
+		display: none
 	.slider-content .bg-slider
 		background-image: url("../img/1920.png")
 		height: 105%;
@@ -357,8 +361,7 @@
 	.btn_white
 		margin: 0 auto
 
-	main.banner
-		padding-top: 50px
+	
 
 
 	main.banner .catalog #tabs .catalog-item .tooltip
@@ -380,6 +383,9 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+	main.banner
+		padding-top: 50px
 	.main .btn_white
 		width: 300px
 	.idea-item
