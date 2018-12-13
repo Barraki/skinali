@@ -791,9 +791,41 @@ main.news-single
 	.wrapper-menu
 		height: auto !important
 
-
-
-	
+.bg-gradient 
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #1eb3b3 51%, rgba(255, 255, 255, 0) 100%)
+	display: flex
+	justify-content: flex-end
+	.description
+		background-color: #1eb3b3
+		width: 1100px
+		color: #fff
+		padding-left: 50px
+		padding-right: 70px
+		padding-top: 59px
+		padding-bottom: 59px
+		text-align: center
+		position: relative
+		margin-top: -17px
+		margin-bottom: 17px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			left: -39px
+			background-color: #1eb3b3
+			height: 283px
+			width: 100px
+			transform: skewX(-15deg);
+		h1
+			font-size: 44px !important
+			font-weight: 300 !important
+			color: #fff !important
+			margin-bottom: 0
+		h2
+			font-size: 44px !important
+			font-weight: 300 !important
+			color: #fff
 #mobile-menu
 	height: 0
 	opacity: 0
@@ -912,12 +944,13 @@ main.banner
 	.short-description
 		background-image: url("../img/fasad.png")
 		background-size: cover
-		padding-top: 40px
+		padding-top: 0
 		min-height: 800px
 		border-bottom: 4px solid #00bebe
 		position: relative
-		h2 
-			display: none
+		.container-fluid_description
+			margin-top: 0
+			padding-top: 40px
 		h1
 			color: #0b3d3c
 			font-size: 50px
