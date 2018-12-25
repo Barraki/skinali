@@ -81,15 +81,15 @@ main
 
 .tooltip-flip
 	position: absolute
-	top: 31%
-	left: 48%
+	top: 39%
+	left: 49%
 	background-color: #20bebe
 	display: flex
 	align-items: center
 	justify-content: center
 	color: #fff
 	font-weight: bold
-	height: 100px
+	height: 60px
 	width: 200px
 	padding: 10px 20px
 	border-radius: 15rem
@@ -795,8 +795,10 @@ main.news-single
 	background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #1eb3b3 51%, rgba(255, 255, 255, 0) 100%)
 	display: flex
 	justify-content: flex-end
+
 	.description
-		background-color: #1eb3b3
+		background-image: url("../img/slide-container.png") 
+		background-size: cover
 		width: 1100px
 		color: #fff
 		padding-left: 50px
@@ -807,25 +809,21 @@ main.news-single
 		position: relative
 		margin-top: -17px
 		margin-bottom: 17px
-		&:before
-			content: ""
-			display: block
-			position: absolute
-			top: 0
-			left: -39px
-			background-color: #1eb3b3
-			height: 283px
-			width: 100px
-			transform: skewX(-15deg);
-		h1
-			font-size: 44px !important
-			font-weight: 300 !important
-			color: #fff !important
-			margin-bottom: 0
-		h2
-			font-size: 44px !important
-			font-weight: 300 !important
-			color: #fff
+		overflow: hidden
+		display: flex
+		flex-direction: row
+		width: 1100px
+		.slide-item
+			width: 1100px
+			h1
+				font-size: 44px !important
+				font-weight: 300 !important
+				color: #fff !important
+				margin-bottom: 0
+			h2
+				font-size: 44px !important
+				font-weight: 300 !important
+				color: #fff
 #mobile-menu
 	height: 0
 	opacity: 0
